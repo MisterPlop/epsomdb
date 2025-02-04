@@ -20,7 +20,7 @@ window.onload = function() {
 // Input : searchTerm (string)
 // Output : Affiche les résultats de recherche triés par nom
 searchButton.onclick = async function() {
-   event.preventDefault();
+   e.preventDefault();
    const searchTerm = searchInput.value;
    if (searchTerm) {
        const welcome = document.getElementById('welcome');
@@ -33,6 +33,7 @@ searchButton.onclick = async function() {
 
 // Gère le clic sur le bouton de tri par nom
 filterNameButton.onclick = async function() {
+   e.preventDefault();
    filterNameButton.disabled = true;
    filterYearButton.disabled = false;
    await sortBy('Name');
@@ -40,6 +41,7 @@ filterNameButton.onclick = async function() {
 
 // Gère le clic sur le bouton de tri par année
 filterYearButton.onclick = async function() {
+   e.preventDefault();
    filterYearButton.disabled = true;
    filterNameButton.disabled = false;
    await sortBy('Year');
