@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>EpsOMDB</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="logo-link">
+        <h1>EpsOMDB</h1>
+      </a>
+      <form class="search-form" id="search-form">
+        <input type="text" id="search-text" />
+        <button id="search-button">Search</button>
+      </form>
+    </header>
+    <main>
+      <div class="filters" id="filters">
+        <h1>Filtres</h1>
+        <button id="filter-year" class="filter-button">Date de Sortie</button>
+        <button id="filter-name" class="filter-button">Nom</button>
+      </div>
+      <div class="movies-grid" id="movies-grid"></div>
+      <div class="welcome" id="welcome">
+        <h1>Bienvenue sur EpsOMDB!</h1>
+        <p>
+          Utilisez la barre de recherche ci-dessus pour trouver des informations
+          sur vos films préférés.
+          <br />Entrez simplement le titre du film et cliquez sur "Search".
+          <br />Les résultats s'afficheront ici.
+        </p>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+  <footer class="footer">
+    <p>EpsOMDB - 2024/2025</p>
+    <p>TP JavaScript - Alan K.</p>
+  </footer>
+</html>
